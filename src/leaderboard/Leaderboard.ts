@@ -41,7 +41,8 @@ export type SubmitResult =
   | { ok: true; todayRank: number | null; weekendRank: number | null }
   | { ok: false; reason: 'name' | 'invalid' | 'busy' | 'offline' }
 
-const TIMEOUT_MS = 8000
+// Apps Script can take several seconds to wake up after a quiet spell.
+const TIMEOUT_MS = 15000
 
 export class Leaderboard {
   constructor(private readonly url: string) {}

@@ -111,7 +111,8 @@ export class TitleScreen {
 
   /** Today's best on each level's board, to beat. */
   private async showTop(): Promise<void> {
-    const board = await this.leaderboard.board()
+    // One retry: the Sheet can be slow to answer the first call after a quiet spell.
+    const board = (await this.leaderboard.board()) ?? (await this.leaderboard.board())
     if (!board) return
     const levels = board.shared ? this.levels.slice(0, 1) : this.levels
     const rows = levels
