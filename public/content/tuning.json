@@ -1,0 +1,39 @@
+{
+  "board": {
+    "width": 8,
+    "height": 14.2,
+    "cupY": 13.0,
+    "cupRange": 3.0,
+    "funnelTopY": 3.4,
+    "funnelBottomY": 2.1,
+    "basketHalfWidth": 1.2,
+    "basketFloorY": 0.5
+  },
+  "nut": {
+    "radius": 0.17,
+    "restitution": 0.35,
+    "linearDamping": 1.0,
+    "pourPerSecond": 20,
+    "maxOnScreen": 400
+  },
+  "physics": {
+    "gravity": -17,
+    "stepsPerSecond": 120
+  },
+  "gate": {
+    "height": 0.46,
+    "bounceSpeed": 24,
+    "bounceAngleDegrees": 15,
+    "maxBouncesPerNut": 1
+  },
+  "pour": {
+    "hideOneChance": 0.75,
+    "stuckSeconds": 2.5,
+    "maxSeconds": 40
+  },
+  "lock": {
+    "pileHeight": 3,
+    "settleSpeed": 0.3,
+    "creakSeconds": 1.2
+  }
+}

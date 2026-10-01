@@ -1,0 +1,2027 @@
+{
+ "note": "Boards are 8 wide and 14.2 tall, measured from the bottom-left corner. Gates sit between y 4.2 and 11.2. Walls are [x1, y1, x2, y2]. A gate is centred on x, y and is w wide. Keep walls off the horizontal so nuts never rest on them, and run a wall that starts at a side all the way to it (x 0 or 8), or nuts wedge in the gap. Tier 1 boards come early in a run, tier 3 late.",
+ "boards": [
+  {
+   "id": "pick-a-side",
+   "name": "Pick a side",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     4,
+     11.2,
+     4,
+     5.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 9.6,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 6.8,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6,
+     "y": 9.6,
+     "w": 3.7
+    },
+    {
+     "type": "subtract",
+     "fraction": 1,
+     "x": 6,
+     "y": 6.8,
+     "w": 3.7
+    }
+   ]
+  },
+  {
+   "id": "funnel",
+   "name": "Funnel",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     0.0,
+     9.6,
+     3.0,
+     7.8
+    ],
+    [
+     8.0,
+     9.6,
+     5.0,
+     7.8
+    ],
+    [
+     3.0,
+     7.8,
+     3.0,
+     6.2
+    ],
+    [
+     5.0,
+     7.8,
+     5.0,
+     6.2
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 10.6,
+     "w": 7.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 6.9,
+     "w": 1.9
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 4.7,
+     "w": 1.6,
+     "move": {
+      "range": 5.2,
+      "period": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "two-step",
+   "name": "Two step",
+   "tier": 1,
+   "hideOne": true,
+   "walls": [
+    [
+     4,
+     9.8,
+     4,
+     6.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 10.6,
+     "w": 7.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 8.2,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6,
+     "y": 8.2,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.0,
+     "w": 1.6,
+     "move": {
+      "range": 5.2,
+      "period": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "zigzag",
+   "name": "Zigzag",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     0.0,
+     10.6,
+     5.4,
+     8.8
+    ],
+    [
+     8.0,
+     8.2,
+     2.6,
+     6.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.8,
+     "y": 11.2,
+     "w": 3.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 5.8,
+     "y": 8.3,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.7,
+     "y": 5.6,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2.1,
+     "y": 4.3,
+     "w": 1.4,
+     "move": {
+      "range": 1.6,
+      "period": 2.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "bounce-back",
+   "name": "Bounce back",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     4.8,
+     11.0,
+     4.8,
+     6.0
+    ],
+    [
+     0.0,
+     7.6,
+     2.6,
+     6.2
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6.4,
+     "y": 9.8,
+     "w": 3.0
+    },
+    {
+     "type": "bounce",
+     "x": 6.4,
+     "y": 6.6,
+     "w": 3.0
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 2.4,
+     "y": 9.2,
+     "w": 4.5
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 3.7,
+     "y": 6.4,
+     "w": 2.0
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 4.7,
+     "w": 1.6,
+     "move": {
+      "range": 5.2,
+      "period": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "three-doors",
+   "name": "Three doors",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     2.67,
+     11.0,
+     2.67,
+     7.8
+    ],
+    [
+     5.33,
+     11.0,
+     5.33,
+     7.8
+    ],
+    [
+     0.0,
+     7.0,
+     2.4,
+     5.8
+    ],
+    [
+     8.0,
+     7.0,
+     5.6,
+     5.8
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.33,
+     "y": 9.4,
+     "w": 2.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.75,
+     "x": 4,
+     "y": 9.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6.67,
+     "y": 9.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 4.9,
+     "w": 1.6,
+     "move": {
+      "range": 4.0,
+      "period": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "portal",
+   "name": "Portal",
+   "tier": 2,
+   "hideOne": false,
+   "walls": [
+    [
+     2.67,
+     11.0,
+     2.67,
+     8.6
+    ],
+    [
+     5.33,
+     11.0,
+     5.33,
+     8.6
+    ],
+    [
+     5.33,
+     7.4,
+     5.33,
+     4.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 1.33,
+     "y": 9.8,
+     "w": 2.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 9.8,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.67,
+     "y": 9.8,
+     "w": 2.4
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 1.33,
+     "y": 7.6,
+     "w": 2.2
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 6.67,
+     "y": 6.8,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6.67,
+     "y": 5.2,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2.6,
+     "y": 5.0,
+     "w": 1.6,
+     "move": {
+      "range": 3.6,
+      "period": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "lock-box",
+   "name": "Lock box",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     4,
+     10.8,
+     4,
+     4.8
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 10.0,
+     "w": 3.7
+    },
+    {
+     "type": "lock",
+     "fraction": 0.8,
+     "x": 2,
+     "y": 8.0,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 2,
+     "y": 5.8,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6,
+     "y": 9.6,
+     "w": 3.7
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.75,
+     "x": 6,
+     "y": 7.4,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6,
+     "y": 5.4,
+     "w": 1.6,
+     "move": {
+      "range": 1.0,
+      "period": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "chevron",
+   "name": "Chevron",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     4,
+     11.0,
+     4,
+     10.0
+    ],
+    [
+     0.0,
+     9.4,
+     3.3,
+     8.0
+    ],
+    [
+     8.0,
+     9.4,
+     4.7,
+     8.0
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 10.4,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6,
+     "y": 10.4,
+     "w": 3.7
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 7.3,
+     "w": 1.3
+    },
+    {
+     "type": "bounce",
+     "x": 4,
+     "y": 5.4,
+     "w": 2.0
+    }
+   ]
+  },
+  {
+   "id": "ladder",
+   "name": "Ladder",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     2.67,
+     11.0,
+     2.67,
+     4.8
+    ],
+    [
+     5.33,
+     11.0,
+     5.33,
+     4.8
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.33,
+     "y": 10.0,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.33,
+     "y": 7.6,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.33,
+     "y": 5.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 9.4,
+     "w": 2.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 1.5,
+     "x": 4,
+     "y": 6.8,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6.67,
+     "y": 10.0,
+     "w": 2.4
+    },
+    {
+     "type": "bounce",
+     "x": 6.67,
+     "y": 5.6,
+     "w": 2.4
+    }
+   ]
+  },
+  {
+   "id": "gauntlet",
+   "name": "Gauntlet",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     2.67,
+     10.0,
+     2.67,
+     6.4
+    ],
+    [
+     5.33,
+     10.0,
+     5.33,
+     6.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 10.8,
+     "w": 7.6
+    },
+    {
+     "type": "subtract",
+     "fraction": 1.5,
+     "x": 1.33,
+     "y": 9.0,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 5,
+     "x": 1.33,
+     "y": 7.2,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 8.4,
+     "w": 2.4
+    },
+    {
+     "type": "lock",
+     "fraction": 0.6,
+     "x": 6.67,
+     "y": 9.0,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6.67,
+     "y": 7.2,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.0,
+     "w": 1.6,
+     "move": {
+      "range": 5.2,
+      "period": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "high-roller",
+   "name": "High roller",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     3.35,
+     10.6,
+     3.35,
+     8.4
+    ],
+    [
+     4.65,
+     10.6,
+     4.65,
+     8.4
+    ],
+    [
+     0.0,
+     8.2,
+     2.4,
+     7.2
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 6,
+     "x": 4,
+     "y": 9.0,
+     "w": 1.0
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.7,
+     "y": 9.8,
+     "w": 2.9
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6.3,
+     "y": 9.8,
+     "w": 2.9
+    },
+    {
+     "type": "subtract",
+     "fraction": 1,
+     "x": 6.3,
+     "y": 7.6,
+     "w": 2.9
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 2.6,
+     "y": 6.2,
+     "w": 2.0
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 4,
+     "y": 11.2,
+     "w": 1.0,
+     "exitOnly": true
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.0,
+     "w": 1.6,
+     "move": {
+      "range": 5.2,
+      "period": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "sieve",
+   "name": "Sieve",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     0.0,
+     7.4,
+     1.9,
+     6.4
+    ],
+    [
+     8.0,
+     7.4,
+     6.1,
+     6.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 0.8,
+     "y": 10.2,
+     "w": 1.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.25,
+     "x": 2.4,
+     "y": 10.2,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4.0,
+     "y": 10.2,
+     "w": 1.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.25,
+     "x": 5.6,
+     "y": 10.2,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 7.2,
+     "y": 10.2,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.6,
+     "y": 8.4,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 3.2,
+     "y": 8.4,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4.8,
+     "y": 8.4,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.4,
+     "y": 8.4,
+     "w": 1.4
+    },
+    {
+     "type": "bounce",
+     "x": 4,
+     "y": 6.2,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 4.8,
+     "w": 1.6,
+     "move": {
+      "range": 4.4,
+      "period": 2.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "staircase",
+   "name": "Staircase",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     0,
+     10.2,
+     3.2,
+     9.2
+    ],
+    [
+     2.2,
+     8.2,
+     5.6,
+     7.2
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.6,
+     "y": 11,
+     "w": 2.8
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 3.9,
+     "y": 8.7,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.3,
+     "y": 6.5,
+     "w": 1.4
+    }
+   ]
+  },
+  {
+   "id": "long-slide",
+   "name": "Long slide",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     0,
+     10,
+     6.4,
+     7.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.5,
+     "y": 11,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4.6,
+     "y": 10.2,
+     "w": 1.2
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 7,
+     "y": 6.4,
+     "w": 1.6
+    }
+   ]
+  },
+  {
+   "id": "rooftop",
+   "name": "Rooftop",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     2.4,
+     8.4,
+     4,
+     9.4
+    ],
+    [
+     4,
+     9.4,
+     5.6,
+     8.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 10.2,
+     "w": 1.1
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.6,
+     "y": 7.2,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.4,
+     "y": 7.2,
+     "w": 2.6
+    }
+   ]
+  },
+  {
+   "id": "peg-garden",
+   "name": "Peg garden",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [
+    [
+     1.34,
+     9.44,
+     1.46,
+     9.36
+    ],
+    [
+     2.94,
+     9.44,
+     3.06,
+     9.36
+    ],
+    [
+     4.54,
+     9.44,
+     4.66,
+     9.36
+    ],
+    [
+     6.14,
+     9.44,
+     6.26,
+     9.36
+    ],
+    [
+     2.14,
+     8.44,
+     2.26,
+     8.36
+    ],
+    [
+     3.74,
+     8.44,
+     3.86,
+     8.36
+    ],
+    [
+     5.34,
+     8.44,
+     5.46,
+     8.36
+    ],
+    [
+     6.94,
+     8.44,
+     7.06,
+     8.36
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2,
+     "y": 10.8,
+     "w": 3
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.4,
+     "y": 6.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 6.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.6,
+     "y": 6.4,
+     "w": 2.4
+    }
+   ]
+  },
+  {
+   "id": "bullseye",
+   "name": "Bullseye",
+   "tier": 1,
+   "hideOne": false,
+   "walls": [],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 11,
+     "w": 7.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 8.8,
+     "w": 3.2
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 6.6,
+     "w": 1.2
+    }
+   ]
+  },
+  {
+   "id": "swinger",
+   "name": "Swinger",
+   "tier": 1,
+   "hideOne": true,
+   "walls": [],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.5,
+     "y": 10.6,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.5,
+     "y": 10.6,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 8.2,
+     "w": 1.6,
+     "move": {
+      "range": 4.4,
+      "period": 2.4
+     }
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.4,
+     "w": 2.4
+    }
+   ]
+  },
+  {
+   "id": "needle",
+   "name": "Needle",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     0,
+     8.4,
+     1.8,
+     7.2
+    ],
+    [
+     8,
+     8.4,
+     6.2,
+     7.2
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 5,
+     "x": 4,
+     "y": 10.4,
+     "w": 0.9
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 2.85,
+     "y": 10.4,
+     "w": 1.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 5.15,
+     "y": 10.4,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.05,
+     "y": 10.4,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.95,
+     "y": 10.4,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 6,
+     "w": 4
+    }
+   ]
+  },
+  {
+   "id": "patrol",
+   "name": "Patrol",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     0,
+     7.6,
+     2.2,
+     6.4
+    ],
+    [
+     8,
+     7.6,
+     5.8,
+     6.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 11.2,
+     "w": 1.4,
+     "move": {
+      "range": 5,
+      "period": 1.5
+     }
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 1,
+     "y": 9.2,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2.9,
+     "y": 9.2,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 5.1,
+     "y": 9.2,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 7,
+     "y": 9.2,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 6,
+     "w": 3
+    }
+   ]
+  },
+  {
+   "id": "pendulum",
+   "name": "Pendulum",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [],
+   "gates": [
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 11,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.5,
+     "y": 11,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.5,
+     "y": 11,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 8.4,
+     "w": 1.4,
+     "move": {
+      "range": 4,
+      "period": 2.2
+     }
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.4,
+     "w": 3
+    }
+   ]
+  },
+  {
+   "id": "catapult",
+   "name": "Catapult",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     8,
+     7.6,
+     2.8,
+     5.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "bounce",
+     "x": 1.6,
+     "y": 5,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 1.4,
+     "y": 10.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 10.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6.6,
+     "y": 10.4,
+     "w": 1.4
+    }
+   ]
+  },
+  {
+   "id": "secret-room",
+   "name": "Secret room",
+   "tier": 2,
+   "hideOne": false,
+   "walls": [
+    [
+     2.6,
+     9,
+     4,
+     10
+    ],
+    [
+     4,
+     10,
+     5.4,
+     9
+    ],
+    [
+     2.6,
+     9,
+     2.6,
+     7.6
+    ],
+    [
+     5.4,
+     9,
+     5.4,
+     7.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 1.3,
+     "y": 10.6,
+     "w": 1.6
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 4,
+     "y": 9.2,
+     "w": 1.2,
+     "exitOnly": true
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 8.2,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6.7,
+     "y": 10.6,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.8,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.3,
+     "y": 7,
+     "w": 2.2
+    }
+   ]
+  },
+  {
+   "id": "dam",
+   "name": "Dam",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     0,
+     9.6,
+     3,
+     7.6
+    ],
+    [
+     8,
+     9.6,
+     5,
+     7.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 10.8,
+     "w": 2.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1,
+     "y": 11,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 7,
+     "y": 11,
+     "w": 1.6
+    },
+    {
+     "type": "lock",
+     "fraction": 1,
+     "x": 4,
+     "y": 7.3,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 5.8,
+     "w": 2
+    }
+   ]
+  },
+  {
+   "id": "twin-peaks",
+   "name": "Twin peaks",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     1.2,
+     8.8,
+     2.4,
+     9.6
+    ],
+    [
+     2.4,
+     9.6,
+     3.6,
+     8.8
+    ],
+    [
+     4.4,
+     7.6,
+     5.6,
+     8.4
+    ],
+    [
+     5.6,
+     8.4,
+     6.8,
+     7.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2.4,
+     "y": 10.4,
+     "w": 1
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 5.6,
+     "y": 9.2,
+     "w": 1
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 7.2,
+     "w": 0.8
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 0.7,
+     "y": 7.2,
+     "w": 1.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 7.3,
+     "y": 6.6,
+     "w": 1.2
+    }
+   ]
+  },
+  {
+   "id": "toll-road",
+   "name": "Toll road",
+   "tier": 2,
+   "hideOne": true,
+   "walls": [
+    [
+     2.4,
+     10.2,
+     3.2,
+     9.4
+    ],
+    [
+     5.6,
+     10.2,
+     4.8,
+     9.4
+    ],
+    [
+     3.2,
+     9.4,
+     3.2,
+     6.6
+    ],
+    [
+     4.8,
+     9.4,
+     4.8,
+     6.6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 11.2,
+     "w": 7.6
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 9,
+     "w": 1.3
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 7.4,
+     "w": 1.3
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.2,
+     "y": 8.2,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.8,
+     "y": 8.2,
+     "w": 2.2
+    }
+   ]
+  },
+  {
+   "id": "vault",
+   "name": "Vault",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     3.6,
+     10,
+     5.4,
+     8.4
+    ],
+    [
+     8,
+     10,
+     7,
+     8.4
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6,
+     "y": 11,
+     "w": 2.8
+    },
+    {
+     "type": "lock",
+     "fraction": 1,
+     "x": 6.2,
+     "y": 8.1,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 6,
+     "x": 6.2,
+     "y": 6.8,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.5,
+     "y": 10.6,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.5,
+     "y": 7.6,
+     "w": 2.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 3.2,
+     "y": 8.8,
+     "w": 1
+    }
+   ]
+  },
+  {
+   "id": "jackpot",
+   "name": "Jackpot",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 11,
+     "w": 3.4
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 1,
+     "y": 10.6,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 7,
+     "y": 10.6,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 6,
+     "x": 4,
+     "y": 8.4,
+     "w": 1.2,
+     "move": {
+      "range": 3.6,
+      "period": 2
+     }
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 1.4,
+     "y": 6.4,
+     "w": 2.4
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 6.6,
+     "y": 6.4,
+     "w": 2.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 6.4,
+     "w": 2.4
+    }
+   ]
+  },
+  {
+   "id": "pinball",
+   "name": "Pinball",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     2.54,
+     8.04,
+     2.66,
+     7.96
+    ],
+    [
+     5.34,
+     8.04,
+     5.46,
+     7.96
+    ],
+    [
+     3.94,
+     8.84,
+     4.06,
+     8.76
+    ]
+   ],
+   "gates": [
+    {
+     "type": "bounce",
+     "x": 1.4,
+     "y": 5.4,
+     "w": 2.2
+    },
+    {
+     "type": "bounce",
+     "x": 6.6,
+     "y": 5.4,
+     "w": 2.2
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4,
+     "y": 10.4,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 1.6,
+     "y": 9,
+     "w": 2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6.4,
+     "y": 9,
+     "w": 2
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 7,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 11.6,
+     "w": 1.2
+    }
+   ]
+  },
+  {
+   "id": "crossfire",
+   "name": "Crossfire",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 1.2,
+     "y": 11,
+     "w": 1.8
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 6.8,
+     "y": 11,
+     "w": 1.8
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 4,
+     "y": 9.6,
+     "w": 1.6,
+     "move": {
+      "range": 4,
+      "period": 1.8
+     }
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 4,
+     "y": 7.4,
+     "w": 1.4,
+     "move": {
+      "range": 4.4,
+      "period": 1.4
+     }
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4,
+     "y": 5.4,
+     "w": 3
+    }
+   ]
+  },
+  {
+   "id": "trapdoor",
+   "name": "Trapdoor",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     4,
+     11.2,
+     4,
+     6
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 2,
+     "y": 10.6,
+     "w": 3.6
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 1,
+     "y": 8.6,
+     "w": 1.4
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 2.8,
+     "y": 7.4,
+     "w": 1.6
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 6,
+     "y": 10.4,
+     "w": 3.6
+    },
+    {
+     "type": "subtract",
+     "fraction": 1,
+     "x": 6,
+     "y": 8.6,
+     "w": 3.6
+    },
+    {
+     "type": "teleport",
+     "pair": "a",
+     "x": 6,
+     "y": 7.2,
+     "w": 2,
+     "exitOnly": true
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6,
+     "y": 5.6,
+     "w": 2.2
+    }
+   ]
+  },
+  {
+   "id": "switchback",
+   "name": "Switchback",
+   "tier": 3,
+   "hideOne": true,
+   "walls": [
+    [
+     0,
+     11.6,
+     4.4,
+     9.2
+    ],
+    [
+     8,
+     9,
+     3.6,
+     6.8
+    ],
+    [
+     0,
+     6.8,
+     4,
+     4.8
+    ]
+   ],
+   "gates": [
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 4.8,
+     "y": 8.7,
+     "w": 1.2
+    },
+    {
+     "type": "multiply",
+     "value": 2,
+     "x": 3.2,
+     "y": 6.2,
+     "w": 1.2
+    },
+    {
+     "type": "multiply",
+     "value": 3,
+     "x": 4.4,
+     "y": 4.25,
+     "w": 1.2
+    },
+    {
+     "type": "multiply",
+     "value": 4,
+     "x": 6.4,
+     "y": 10.5,
+     "w": 1
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 5.4,
+     "y": 10.5,
+     "w": 1
+    },
+    {
+     "type": "subtract",
+     "fraction": 0.5,
+     "x": 7.4,
+     "y": 10.5,
+     "w": 1
+    }
+   ]
+  }
+ ]
+}

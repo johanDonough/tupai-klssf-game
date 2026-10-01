@@ -1,0 +1,96 @@
+{
+  "sounds": {
+    "bgm": [
+      "bgm.mp3"
+    ],
+    "throw": [
+      "throw-1.mp3",
+      "throw-2.mp3",
+      "throw-3.mp3"
+    ],
+    "hit": [
+      "hit-1.mp3",
+      "hit-2.mp3",
+      "hit-3.mp3"
+    ],
+    "crit": [
+      "crit.mp3"
+    ],
+    "foe-attack": [
+      "foe-attack.mp3"
+    ],
+    "beaten": [
+      "beaten.mp3"
+    ],
+    "nut-drop": [
+      "nut-drop-1.mp3",
+      "nut-drop-2.mp3"
+    ],
+    "pour-gate": [
+      "pour-gate.mp3"
+    ],
+    "bounce": [
+      "bounce.mp3"
+    ],
+    "lock-break": [
+      "lock-break.mp3"
+    ],
+    "portal": [
+      "portal.mp3"
+    ],
+    "bank": [
+      "bank-1.mp3",
+      "bank-2.mp3"
+    ],
+    "card-buy": [
+      "card-buy.mp3"
+    ],
+    "button": [
+      "button.mp3"
+    ],
+    "correct": [
+      "correct.mp3"
+    ],
+    "wrong": [
+      "wrong.mp3"
+    ],
+    "tick": [
+      "tick.mp3"
+    ],
+    "wave-start": [
+      "wave-start.mp3"
+    ],
+    "win": [
+      "win.mp3"
+    ],
+    "lose": [
+      "lose.mp3"
+    ],
+    "revive": [
+      "revive.mp3"
+    ]
+  },
+  "volume": {
+    "bgm": 0.35,
+    "throw": 0.5,
+    "hit": 0.7,
+    "crit": 0.8,
+    "foe-attack": 0.6,
+    "beaten": 0.65,
+    "nut-drop": 0.35,
+    "pour-gate": 0.3,
+    "bounce": 0.45,
+    "lock-break": 0.7,
+    "portal": 0.45,
+    "bank": 0.3,
+    "card-buy": 0.75,
+    "button": 0.5,
+    "correct": 0.8,
+    "wrong": 0.6,
+    "tick": 0.5,
+    "wave-start": 0.65,
+    "win": 0.85,
+    "lose": 0.7,
+    "revive": 0.75
+  }
+}

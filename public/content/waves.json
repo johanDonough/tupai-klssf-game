@@ -1,0 +1,183 @@
+{
+  "note": "The one level: 15 waves. Each wave is a list of sub-waves; each sub-wave is the Muddles that walk on together. The cup holds cupBase nuts plus what the Muddles drop. Muddle health and attack grow by scalePerWave for every wave after the first. Before each wave there is a short maths quiz (waveQuiz): if Junior is hurt he heals baseHeal of his max health plus healPerRight for each right answer; at full health each right answer is worth bonus nuts instead, nutsPerRight[tier - 1] by question tier (waves 1-5, 6-10, 11-15).",
+  "cupBase": 6,
+  "hero": {
+    "health": 100,
+    "attack": 12
+  },
+  "waveQuiz": {
+    "questions": 2,
+    "baseHeal": 0.05,
+    "healPerRight": 0.075,
+    "nutsPerRight": [
+      3,
+      6,
+      10
+    ]
+  },
+  "scalePerWave": {
+    "health": 0.1,
+    "attack": 0.1
+  },
+  "enemies": {
+    "melee-small": {
+      "name": "Muddle",
+      "nuts": 3,
+      "health": 20,
+      "attack": 4,
+      "range": "melee"
+    },
+    "melee-large": {
+      "name": "Big Muddle",
+      "nuts": 6,
+      "health": 55,
+      "attack": 8,
+      "range": "melee"
+    },
+    "ranged-small": {
+      "name": "Flicker",
+      "nuts": 3,
+      "health": 15,
+      "attack": 3,
+      "range": "ranged"
+    },
+    "ranged-large": {
+      "name": "Big Flicker",
+      "nuts": 6,
+      "health": 45,
+      "attack": 7,
+      "range": "ranged"
+    },
+    "boss": {
+      "name": "King Muddle",
+      "nuts": 0,
+      "health": 360,
+      "attack": 16,
+      "range": "melee"
+    }
+  },
+  "waves": [
+    [
+      [
+        "melee-small"
+      ]
+    ],
+    [
+      [
+        "melee-small",
+        "melee-small"
+      ]
+    ],
+    [
+      [
+        "ranged-small"
+      ],
+      [
+        "ranged-small"
+      ]
+    ],
+    [
+      [
+        "melee-small",
+        "ranged-small"
+      ]
+    ],
+    [
+      [
+        "melee-small",
+        "melee-small",
+        "melee-small"
+      ]
+    ],
+    [
+      [
+        "ranged-small",
+        "melee-small"
+      ],
+      [
+        "melee-small",
+        "ranged-small",
+        "melee-small"
+      ]
+    ],
+    [
+      [
+        "melee-large"
+      ]
+    ],
+    [
+      [
+        "melee-small",
+        "melee-small",
+        "ranged-small",
+        "ranged-small"
+      ]
+    ],
+    [
+      [
+        "ranged-small",
+        "ranged-small",
+        "ranged-small"
+      ],
+      [
+        "melee-large",
+        "melee-small"
+      ]
+    ],
+    [
+      [
+        "melee-large",
+        "ranged-small"
+      ],
+      [
+        "melee-small",
+        "melee-small",
+        "melee-small",
+        "ranged-small"
+      ]
+    ],
+    [
+      [
+        "ranged-large"
+      ],
+      [
+        "melee-small",
+        "melee-small",
+        "ranged-large"
+      ]
+    ],
+    [
+      [
+        "melee-large",
+        "ranged-large",
+        "melee-large"
+      ]
+    ],
+    [
+      [
+        "melee-small",
+        "melee-large",
+        "melee-small"
+      ],
+      [
+        "ranged-large",
+        "ranged-small",
+        "ranged-large"
+      ]
+    ],
+    [
+      [
+        "melee-large",
+        "ranged-large",
+        "melee-large",
+        "ranged-large",
+        "melee-large"
+      ]
+    ],
+    [
+      [
+        "boss"
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+ "basket": {
+  "file": "basket.webp",
+  "width": 512,
+  "height": 288
+ },
+ "cup": {
+  "file": "cup.webp",
+  "width": 248,
+  "height": 320
+ },
+ "fx-dizzy": {
+  "file": "fx-dizzy.webp",
+  "width": 256,
+  "height": 102
+ },
+ "fx-hit": {
+  "file": "fx-hit.webp",
+  "width": 256,
+  "height": 256
+ },
+ "fx-poof": {
+  "file": "fx-poof.webp",
+  "width": 256,
+  "height": 186
+ },
+ "fx-sparkle": {
+  "file": "fx-sparkle.webp",
+  "width": 128,
+  "height": 123
+ },
+ "fx-trail": {
+  "file": "fx-trail.webp",
+  "width": 256,
+  "height": 43
+ },
+ "gate-super": {
+  "file": "gate-super.webp",
+  "width": 512,
+  "height": 362
+ },
+ "gate": {
+  "file": "gate.webp",
+  "width": 512,
+  "height": 353
+ },
+ "junior-blink": {
+  "file": "junior-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-cheer": {
+  "file": "junior-cheer.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-down": {
+  "file": "junior-down.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-hurt": {
+  "file": "junior-hurt.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-idle": {
+  "file": "junior-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-throw-windup": {
+  "file": "junior-throw-windup.webp",
+  "width": 512,
+  "height": 512
+ },
+ "junior-throw": {
+  "file": "junior-throw.webp",
+  "width": 512,
+  "height": 512
+ },
+ "lane-far": {
+  "file": "lane-far.webp",
+  "width": 1024,
+  "height": 272
+ },
+ "lane-ground": {
+  "file": "lane-ground.webp",
+  "width": 1024,
+  "height": 99
+ },
+ "lane-mid": {
+  "file": "lane-mid.webp",
+  "width": 1024,
+  "height": 308
+ },
+ "muddle-boss-attack": {
+  "file": "muddle-boss-attack.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-boss-beaten": {
+  "file": "muddle-boss-beaten.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-boss-blink": {
+  "file": "muddle-boss-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-boss-idle": {
+  "file": "muddle-boss-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-boss-walk-1": {
+  "file": "muddle-boss-walk-1.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-boss-walk-2": {
+  "file": "muddle-boss-walk-2.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-attack": {
+  "file": "muddle-melee-large-attack.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-beaten": {
+  "file": "muddle-melee-large-beaten.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-blink": {
+  "file": "muddle-melee-large-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-idle": {
+  "file": "muddle-melee-large-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-walk-1": {
+  "file": "muddle-melee-large-walk-1.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-walk-2": {
+  "file": "muddle-melee-large-walk-2.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-large-windup": {
+  "file": "muddle-melee-large-windup.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-attack": {
+  "file": "muddle-melee-small-attack.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-beaten": {
+  "file": "muddle-melee-small-beaten.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-blink": {
+  "file": "muddle-melee-small-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-idle": {
+  "file": "muddle-melee-small-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-walk-1": {
+  "file": "muddle-melee-small-walk-1.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-walk-2": {
+  "file": "muddle-melee-small-walk-2.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-melee-small-windup": {
+  "file": "muddle-melee-small-windup.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-attack": {
+  "file": "muddle-ranged-large-attack.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-beaten": {
+  "file": "muddle-ranged-large-beaten.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-blink": {
+  "file": "muddle-ranged-large-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-idle": {
+  "file": "muddle-ranged-large-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-walk-1": {
+  "file": "muddle-ranged-large-walk-1.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-large-walk-2": {
+  "file": "muddle-ranged-large-walk-2.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-attack": {
+  "file": "muddle-ranged-small-attack.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-beaten": {
+  "file": "muddle-ranged-small-beaten.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-blink": {
+  "file": "muddle-ranged-small-blink.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-idle": {
+  "file": "muddle-ranged-small-idle.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-walk-1": {
+  "file": "muddle-ranged-small-walk-1.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-ranged-small-walk-2": {
+  "file": "muddle-ranged-small-walk-2.webp",
+  "width": 512,
+  "height": 512
+ },
+ "muddle-shot": {
+  "file": "muddle-shot.webp",
+  "width": 128,
+  "height": 126
+ },
+ "nut-pile-large": {
+  "file": "nut-pile-large.webp",
+  "width": 512,
+  "height": 267
+ },
+ "nut-pile-medium": {
+  "file": "nut-pile-medium.webp",
+  "width": 384,
+  "height": 244
+ },
+ "nut-pile-small": {
+  "file": "nut-pile-small.webp",
+  "width": 256,
+  "height": 172
+ },
+ "nut-super": {
+  "file": "nut-super.webp",
+  "width": 107,
+  "height": 128
+ },
+ "nut": {
+  "file": "nut.webp",
+  "width": 107,
+  "height": 128
+ }
+}

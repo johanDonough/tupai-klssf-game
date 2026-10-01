@@ -1,0 +1,204 @@
+{
+  "note": "Upgrade cards. price is the first purchase; each later purchase of the same card costs priceGrowth times more. max is how many times a card can be bought in one run. {amount} in the description is replaced by the effect amount. questionSeconds is the time limit on every maths question; getAllPerRun caps the 'Get all 3' question. total is what all the copies taken so far add up to, shown in the upgrades overlay: {total} is the sum, {s} an s when it is more than 1. 'Get all 3' only turns up now and then: from wave getAllFromWave on, each shop has a getAllChance chance of offering it. colour tints the card's icon wherever it shows (shop, top bar, upgrades panel).",
+  "rerollPrice": 25,
+  "rerollGrowth": 1.5,
+  "rareChance": 0.3,
+  "questionSeconds": 7,
+  "getAllPerRun": 3,
+  "getAllChance": 0.3,
+  "getAllFromWave": 3,
+  "cards": [
+    {
+      "id": "attack",
+      "name": "Attack",
+      "description": "Throws hit {amount}% harder",
+      "total": "Throws hit {total}% harder",
+      "rarity": "common",
+      "icon": "sword",
+      "colour": "#E0524C",
+      "price": 50,
+      "priceGrowth": 1.5,
+      "max": 5,
+      "effect": {
+        "stat": "attack",
+        "amount": 25
+      }
+    },
+    {
+      "id": "health",
+      "name": "Max health",
+      "description": "{amount}% more health, and heal that much",
+      "total": "{total}% more max health",
+      "rarity": "common",
+      "icon": "heart",
+      "colour": "#1DA130",
+      "price": 50,
+      "priceGrowth": 1.5,
+      "max": 5,
+      "effect": {
+        "stat": "health",
+        "amount": 30
+      }
+    },
+    {
+      "id": "armour",
+      "name": "Armour",
+      "description": "Take {amount} less damage from every hit",
+      "total": "{total} less damage from every hit",
+      "rarity": "common",
+      "icon": "shield",
+      "colour": "#2E9E44",
+      "price": 60,
+      "priceGrowth": 1.5,
+      "max": 5,
+      "effect": {
+        "stat": "armour",
+        "amount": 3
+      }
+    },
+    {
+      "id": "crit",
+      "name": "Crit chance",
+      "description": "{amount}% chance a throw does double damage",
+      "total": "{total}% chance of a double-damage throw",
+      "rarity": "common",
+      "icon": "target",
+      "colour": "#FF6300",
+      "price": 70,
+      "priceGrowth": 1.6,
+      "max": 4,
+      "effect": {
+        "stat": "critChance",
+        "amount": 15
+      }
+    },
+    {
+      "id": "heal-wave",
+      "name": "Second wind",
+      "description": "Heal {amount}% at the start of every wave",
+      "total": "Heals {total}% at the start of every wave",
+      "rarity": "common",
+      "icon": "heart-plus",
+      "colour": "#25A86B",
+      "price": 80,
+      "priceGrowth": 1.8,
+      "max": 3,
+      "effect": {
+        "stat": "healOnWave",
+        "amount": 25
+      }
+    },
+    {
+      "id": "starting-nuts",
+      "name": "Starting nuts",
+      "description": "{amount} more nuts in every pour",
+      "total": "{total} more nuts in every pour",
+      "rarity": "common",
+      "icon": "basket-plus",
+      "colour": "#C46A1B",
+      "price": 60,
+      "priceGrowth": 1.6,
+      "max": 4,
+      "effect": {
+        "stat": "startingNuts",
+        "amount": 6
+      }
+    },
+    {
+      "id": "lifesteal",
+      "name": "Lifesteal",
+      "description": "Heal {amount}% of the damage you deal",
+      "total": "Heals {total}% of the damage dealt",
+      "rarity": "rare",
+      "icon": "droplet",
+      "colour": "#D81B60",
+      "price": 150,
+      "priceGrowth": 1.8,
+      "max": 3,
+      "effect": {
+        "stat": "lifesteal",
+        "amount": 10
+      }
+    },
+    {
+      "id": "ricochet",
+      "name": "Ricochet",
+      "description": "Throws bounce on to {amount} more Muddle",
+      "total": "Throws bounce on to {total} more Muddle{s}",
+      "rarity": "rare",
+      "icon": "arrow-bounce",
+      "colour": "#4F5BFD",
+      "price": 220,
+      "priceGrowth": 2,
+      "max": 3,
+      "effect": {
+        "stat": "ricochet",
+        "amount": 1
+      }
+    },
+    {
+      "id": "extra-nut",
+      "name": "Extra nut",
+      "description": "Throw {amount} more nut every turn",
+      "total": "Throws {total} more nut{s} every turn",
+      "rarity": "rare",
+      "icon": "circle-plus",
+      "colour": "#1E9BB0",
+      "price": 250,
+      "priceGrowth": 2,
+      "max": 3,
+      "effect": {
+        "stat": "extraNut",
+        "amount": 1
+      }
+    },
+    {
+      "id": "double",
+      "name": "Double turn",
+      "description": "{amount}% chance to throw twice",
+      "total": "{total}% chance to throw twice",
+      "rarity": "rare",
+      "icon": "repeat",
+      "colour": "#7B61FF",
+      "price": 180,
+      "priceGrowth": 2,
+      "max": 3,
+      "effect": {
+        "stat": "doubleChance",
+        "amount": 25
+      }
+    },
+    {
+      "id": "more-nuts",
+      "name": "More nuts",
+      "description": "Every Muddle drops {amount} more nut",
+      "total": "Every Muddle drops {total} more nut{s}",
+      "rarity": "rare",
+      "icon": "plant-2",
+      "colour": "#E09A00",
+      "price": 120,
+      "priceGrowth": 1.8,
+      "max": 3,
+      "effect": {
+        "stat": "moreNuts",
+        "amount": 1
+      }
+    },
+    {
+      "id": "upgrade-gates",
+      "name": "Upgrade gates",
+      "description": "Every board: {amount} random gates get +1×",
+      "total": "{total} random gates get +1× on every board",
+      "rarity": "rare",
+      "icon": "arrow-big-up-lines",
+      "colour": "#E410AF",
+      "price": 120,
+      "priceGrowth": 2,
+      "max": 2,
+      "effect": {
+        "stat": "upgradeGates",
+        "amount": 3
+      }
+    }
+  ]
+}

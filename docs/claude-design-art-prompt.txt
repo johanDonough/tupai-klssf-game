@@ -1,0 +1,84 @@
+CLAUDE DESIGN PROMPT: Tupai KLSSF nut game, art set
+Attach before sending: Tupai design system, plus these files from D:\context-archive\tupai\deck-design-system\graphics\
+  Tupai App Graphic\Practice-ReadyStart.svg
+  Tupai App Graphic\Practice-Progressing.svg
+  Tupai App Graphic\Junior-Happy02.svg
+  Tupai App Graphic\Junior-Sad.svg
+  Tupai App Graphic\Junior-Gaveup.svg
+  Tupai App Graphic\Junior -Upgraded.svg
+  tupai Web graphic\nut-ui.png
+  tupai Web graphic\Tupai UI - Nut.png
+------------------------------------------------------------------------
+
+Make a set of game art for a small browser game at Tupai's booth at the KL Seni & STEM Festival 2026. This is an asset set, not a screen design: each item is its own file on a transparent background, ready to drop into a game engine. Do not design menus, buttons, cards or screens; those are built in code from the design system.
+
+The game in one line: Junior, Tupai's squirrel, throws nuts at waves of "Muddles" (little tangles of confusion), then pours the nuts through a board of multiplier gates to grow the pile. Players are 9 to 17, playing on their own phones, in portrait.
+
+THE ONE RULE THAT MATTERS
+Everything must look like it was drawn by the same hand as the attached Junior artwork. Study those files first and match them:
+- Flat vector shapes. No outlines, no gradients, no textures, no drop shadows.
+- Soft two-tone shading made from a lighter and a darker flat shape of the same colour family (see Junior's tail and legs).
+- Big round white eyes with navy pupils. Small dot freckles. Rounded, chunky limbs.
+- Friendly and a little cheeky. Never scary, never babyish.
+
+COLOURS
+Use only these. No other colours, no tints outside the families listed.
+- Junior: #868FFE body, #4F5BFD shade, #A3A9FE highlight, #020EAB eyes and nose, cap #FF6301 with #AD4300 brim. Do not change Junior's colours.
+- Nut: #FFB911 body, #FF6300 cap, #E410AF stem and stripe, #FBDCAE cap dots.
+- Melee Muddles: teal #44BFD2, with one lighter and one darker teal for shading.
+- Ranged Muddles: pink #E410AF, with one lighter and one darker pink for shading.
+- Boss Muddle: #1B1B1B body with teal #44BFD2 and pink #E410AF tangles.
+- Eyes on every character: white with #020EAB pupils.
+- Props and scenery: orange #FF6300, amber #FFB911, peach #FBDCAE, cream #F6F5F1, border grey #E8E5E0.
+- Green #1DA130 and red #E0524C are reserved for right and wrong answers. Do not use them in the art.
+
+PART 1: JUNIOR (modify the attached art, do not redraw the character)
+Keep Junior's face, proportions, cap and colours exactly as in the attached files. Remove every prop and background element (book, stool, desk, clouds, sparkles, ground patch, tears, "zzz"). Junior faces right in every pose.
+1. junior-idle.svg       Standing, relaxed, ready. Start from Practice-ReadyStart.
+2. junior-throw.svg      Just thrown a nut: front arm fully extended forward, body leaning in, tail up behind. Start from Practice-Progressing.
+3. junior-hurt.svg       Knocked back a little, eyes squeezed shut, leaning away. Start from Junior-Sad, without the tears.
+4. junior-down.svg       Flat out, dizzy X eyes. Start from Junior-Gaveup.
+5. junior-cheer.svg      Jumping, both arms up, big smile. Start from Junior -Upgraded.
+
+PART 2: NUTS (redraw the attached nut as clean vector)
+6. nut.svg               The plain nut from nut-ui.png: no face, no arms. Must still read clearly when shown 24 pixels wide.
+7. nut-super.svg         The same nut with the colours swapped to mark a nut worth many: pink #E410AF cap, amber #FFB911 dots, orange #FF6300 stripe.
+
+PART 3: MUDDLES (new characters, in Junior's style)
+A Muddle is a small round creature that looks like a scribbled tangle with eyes: a soft blob body with two or three loose loops of "yarn" on top, short stubby legs, no arms unless noted. They are nuisances, not villains. All Muddles face left.
+For each one, draw two poses: idle (standing, slight frown of concentration) and attack (lunging or throwing, mouth open).
+8.  muddle-melee-small-idle.svg, muddle-melee-small-attack.svg     Teal. Small and round. Attacks by bumping with its head.
+9.  muddle-melee-large-idle.svg, muddle-melee-large-attack.svg     Teal. Same family, taller and wider, heavier brow, one extra loop of tangle.
+10. muddle-ranged-small-idle.svg, muddle-ranged-small-attack.svg   Pink. Slimmer, with two stubby arms. Attacks by flicking a small scribble ball.
+11. muddle-ranged-large-idle.svg, muddle-ranged-large-attack.svg   Pink. Same family, bigger, with a bigger tangle.
+12. muddle-boss-idle.svg, muddle-boss-attack.svg                   Dark body with teal and pink tangles, three times the size of a small Muddle, wearing a lopsided paper crown in amber. Grumpy, not frightening.
+13. muddle-shot.svg       The scribble ball a ranged Muddle throws: a small pink tangle, no face.
+
+PART 4: PROPS
+14. cup.svg               The cup Junior pours nuts from: a simple open-top tumbler seen from the side, orange #FF6300 with a peach #FBDCAE rim band. Upright. Leave the front plain, because the game prints a number on it.
+15. basket.svg            The basket that catches nuts at the bottom of the board: wider than the cup, amber #FFB911 with a peach rim, seen from the side, open top. Leave the front plain for a number.
+
+PART 5: SCENERY for the fight lane
+Three horizontal strips that tile seamlessly left to right, each 1024 wide by 512 tall, transparent above the shapes. They sit on a white page, so keep them light and quiet.
+16. lane-far.svg          Distant rounded hills in cream #F6F5F1 with a border-grey #E8E5E0 edge shape behind.
+17. lane-mid.svg          A few simple round-topped trees and bushes in peach #FBDCAE. No detail, no leaves.
+18. lane-ground.svg       A flat ground band in peach #FBDCAE, 96 tall at the bottom of the strip, with a slightly darker peach top edge.
+
+PART 6: REVIEW SHEET
+19. One artboard showing every item above side by side at true relative size, on white, with its file name under it in small text. This is for checking only.
+
+FILE RULES (the game loads these directly, so please follow exactly)
+- One SVG per item, using the exact file names above.
+- Characters: 512 by 512 artboard, transparent background, character centred left to right, feet resting on a ground line 64 up from the bottom edge.
+- Relative heights inside that artboard: Junior about 360 tall. Small Muddles about 240. Large Muddles about 340. Boss fills the artboard, about 440.
+- Nuts and the shot: 128 by 128 artboard, centred, filling most of it.
+- Cup and basket: 512 by 512 artboard, centred.
+- Inside each character file, keep the tail, body, head, each arm and each leg as separately named groups, so they can be moved on their own.
+- Plain filled paths only. No strokes used as outlines, no gradients, no filters, no masks, no clipping paths, no embedded bitmaps, no text.
+
+DO NOT
+- Change Junior's face, proportions or colours.
+- Draw weapons, injuries, tears, or anything frightening. A beaten Muddle looks dizzy, nothing more.
+- Add text, numbers, logos, emoji, stock art or photographs to any asset.
+- Add backgrounds, frames or shadows behind the characters.
+- Introduce any colour not listed above.

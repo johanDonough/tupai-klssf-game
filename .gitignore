@@ -1,0 +1,8 @@
+node_modules
+dist
+__pycache__
+
+# Downloaded sound packs and music (about 50 MB). Where each came from, and
+# how to rebuild public/audio from them, is in audio-src/SOURCES.md.
+audio-src/kenney/
+audio-src/music/
