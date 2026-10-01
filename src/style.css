@@ -892,7 +892,7 @@ button.hud-upgrades:empty {
   font-size: 13px;
 }
 
-/* ---- end card: best, leaderboard, claim ------------------------------- */
+/* ---- end card: best and leaderboard ---------------------------------- */
 
 .end-card {
   max-height: calc(100% - 32px);
@@ -921,8 +921,7 @@ button.hud-upgrades:empty {
   color: #ffb911;
 }
 
-.end-board,
-.end-claim {
+.end-board {
   margin-top: 16px;
   padding: 12px;
   border-radius: 12px;
@@ -1092,25 +1091,8 @@ button.hud-upgrades:empty {
   text-align: center;
 }
 
-.end-claim p {
-  margin: 0 0 8px;
-  font-size: 14px;
-  text-align: center;
-}
 
-.button.claim {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: 100%;
-  border-color: var(--orange);
-  background: var(--white);
-  color: var(--orange);
-  text-decoration: none;
-}
 
-.button.claim .icon,
 .end-again .icon,
 .title-play .icon {
   width: 20px;
@@ -1124,19 +1106,7 @@ button.hud-upgrades:empty {
   gap: 6px;
 }
 
-.end-qr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-weight: 700;
-}
 
-.end-qr svg {
-  width: 180px;
-  height: 180px;
-  border-radius: 8px;
-}
 
 /* ---- title screen ----------------------------------------------------- */
 

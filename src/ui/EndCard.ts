@@ -4,17 +4,14 @@ import type { GameConfig, LevelId } from '../content/types'
 import { cleanName, deviceBest, makeName, NAME_MAX, type Board, type BoardRow, type Leaderboard } from '../leaderboard/Leaderboard'
 import type { AnswerLog, RunState } from '../run/RunState'
 import { formatNumber } from './QuestionPanel'
-import { qrSvg } from './qr'
 
-// End of a run: the score, the best on this device, the booth leaderboard,
-// and the way to the Family Duo claim page.
+// End of a run: the score, the best on this device, the maths report and the
+// booth leaderboard.
 
 const icon = (name: string) => `<span class="icon" style="--icon: url('${iconUrl(name)}')"></span>`
 
 export interface EndOptions {
   won: boolean
-  /** On the booth's own device the claim page is a QR code to scan, not a link. */
-  booth: boolean
   /** Called on any tap, so booth mode knows someone is still there. */
   onActivity?: () => void
 }
@@ -42,13 +39,12 @@ export class EndCard {
   }
 
   show(state: RunState, options: EndOptions): Promise<void> {
-    const { won, booth } = options
+    const { won } = options
     const level = state.level
     const best = deviceBest.get(level.id)
     const newBest = state.score > best
     if (newBest) deviceBest.set(level.id, state.score)
     const runId = `${Date.now().toString(36)}-${Math.floor(Math.random() * 1e9).toString(36)}`
-    const claimed = this.config.claimUrl !== ''
 
     this.card.innerHTML = `
       <img class="end-junior" src="${artUrl(won ? 'junior-cheer.webp' : 'junior-down.webp')}" alt="" />
@@ -77,13 +73,6 @@ export class EndCard {
             ${this.config.levels.map((l) => `<button type="button" data-level="${l.id}">${l.name}</button>`).join('')}
           </div>
           <ol class="board-list"><li class="board-empty">Loading the leaderboard…</li></ol>
-        </section>` : ''}
-      ${claimed ? `
-        <section class="end-claim">
-          <p>${this.config.claimNote}</p>
-          ${booth
-            ? `<div class="end-qr">${qrSvg(this.config.claimUrl)}<span>Scan with your phone to claim</span></div>`
-            : `<a class="button claim" href="${this.config.claimUrl}" target="_blank" rel="noopener">${icon('gift')}${this.config.claimLabel}</a>`}
         </section>` : ''}
       <button class="button primary end-again" data-action="again">${icon('refresh')}Play again</button>`
     this.card.hidden = false
@@ -116,7 +105,6 @@ export class EndCard {
     gsap.from(this.card.querySelectorAll('.end-dots i'), { scale: 0, duration: 0.25, stagger: 0.04, delay: 0.5, ease: 'back.out(3)' })
 
     if (this.leaderboard.enabled) this.wireBoard(state, won, runId)
-    if (claimed) void this.hideClaimIfFull()
     this.card.onpointerdown = () => options.onActivity?.()
     this.card.oninput = () => options.onActivity?.()
 
@@ -124,23 +112,6 @@ export class EndCard {
       this.resolve = resolve
       this.card.querySelector<HTMLButtonElement>('[data-action="again"]')!.onclick = () => this.dismiss()
     })
-  }
-
-  /** Leaves the claim button out once all the Family Duo accounts are claimed. */
-  private async hideClaimIfFull(): Promise<void> {
-    const url = this.config.claimStatusUrl
-    if (!url) return
-    try {
-      const controller = new AbortController()
-      setTimeout(() => controller.abort(), 6000)
-      const response = await fetch(`${url}?action=status`, { redirect: 'follow', signal: controller.signal })
-      const status = (await response.json()) as { kssm_left?: number; igcse_left?: number }
-      if (status.kssm_left === 0 && status.igcse_left === 0) {
-        this.card.querySelector<HTMLElement>('.end-claim')?.remove()
-      }
-    } catch {
-      // Can't tell, so the button stays.
-    }
   }
 
   private wireBoard(state: RunState, won: boolean, runId: string): void {

@@ -192,11 +192,6 @@ export interface LevelDef {
 
 export interface GameConfig {
   levels: LevelDef[]
-  claimUrl: string
-  claimLabel: string
-  claimNote: string
-  /** The registration page's Sheet web app; the claim button hides once both lists are full. */
-  claimStatusUrl: string
   /** Empty to play without a leaderboard. */
   leaderboardUrl: string
   boothIdleSeconds: number

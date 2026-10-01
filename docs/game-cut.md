@@ -109,7 +109,7 @@ Four places a question can be taken, all optional:
 ## Score, end screen and leaderboard
 
 - Score is total nuts banked over the run. Waves cleared is the tiebreak.
-- End screen shows score, waves cleared, questions answered correctly, play again, and a button to the Family Duo claim page.
+- End screen shows score, waves cleared, questions answered correctly, and play again. (A button to the Family Duo claim page was built, then removed on 1 Oct: the game stays a stand-alone experiment.)
 - Leaderboard shows today's top 20 and the weekend's top 20.
 - Nickname can be generated or typed **(decided)**. A generated two-word name is offered first; the player can type their own instead, up to 12 characters.
 - Backend is a Google Sheet behind an Apps Script web app for the weekend **(decided)**, the same pattern as the registration page, in a separate Sheet. Johan deploys it; setup steps will be written like the registration page's.
@@ -137,7 +137,7 @@ Each slice is playable on its own. If Thursday runs out, the game ships at the l
 2. Wave loop and shop: nut prices, cards taking effect.
 3. Maths questions at the four touchpoints, both formats.
 4. Fight, in two stages: single lane with hits and health bars first, then sub-waves, ranged and melee behaviour, projectiles and the boss.
-5. End screen, best score on this device, link to the claim page.
+5. End screen, best score on this device.
 6. Leaderboard.
 7. Booth mode, sound, polish.
 
@@ -145,6 +145,5 @@ Each slice is playable on its own. If Thursday runs out, the game ships at the l
 
 - **Enemy concept.** "Muddles" is Claude's proposal in the art prompt, not yet confirmed.
 - **Blocked-word list** for typed leaderboard names.
-- **Claim page address** for the end-screen button.
 - **Hosting.** GitHub Pages like the registration page, or a Tupai address.
 - **Who reviews the question list** before it goes in front of the public.

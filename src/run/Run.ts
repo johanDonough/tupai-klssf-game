@@ -277,7 +277,6 @@ export class Run {
     sound.play(won ? 'win' : 'lose')
     await this.endCard.show(state, {
       won,
-      booth: this.booth !== null,
       onActivity: () => this.booth?.activity(),
     })
   }

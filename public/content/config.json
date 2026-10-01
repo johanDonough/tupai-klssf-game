@@ -1,9 +1,5 @@
 {
-  "note": "Settings that change without touching code. claimUrl is the Family Duo claim page the end screen links to. leaderboardUrl is the Google Sheet web app (leaderboard/SETUP.md); leave it empty to run without a leaderboard. boothIdleSeconds: in booth mode (?booth), how long with no touch before the game resets to the title screen. claimStatusUrl is the registration page's own Sheet web app: when it reports both account lists full, the end screen leaves the claim button out. Empty, or unreachable, means the button always shows. levels are the three difficulties the player picks after Play: each has its own question bank file in content/ and its own leaderboard.",
-  "claimUrl": "https://johandonough.github.io/tupai-klssf-2026/",
-  "claimLabel": "Claim a free Family Duo account",
-  "claimNote": "For KLSSF visitors: a free Tupai account for a parent and child",
-  "claimStatusUrl": "https://script.google.com/macros/s/AKfycby0XTQNsDggOoQGzA6TYXhAfSyYqBM6aexSioKTW4jaE-npNf9bUp900B3RFbrJa0iN/exec",
+  "note": "Settings that change without touching code. leaderboardUrl is the Google Sheet web app (leaderboard/SETUP.md); leave it empty to run without a leaderboard. boothIdleSeconds: in booth mode (?booth), how long with no touch before the game resets to the title screen. levels are the three difficulties the player picks after Play: each has its own question bank file in content/ and its own leaderboard.",
   "leaderboardUrl": "https://script.google.com/macros/s/AKfycbzJqiEzoE5ic9T6QMHlOhGi2EcKPmzOYxWkCf8Ad4AZ3-cXNSPffN5lo6PvIcYIa-s6ZA/exec",
   "boothIdleSeconds": 60,
   "levels": [

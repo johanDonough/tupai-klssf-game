@@ -66,7 +66,7 @@ Add `?bench` to the address to pour any board on its own, without waves.
 Add `?boards` to the address to see every board at once.
 
 - Slice 5: title screen before every run; end screen with the best score on
-  this device and a button to the Family Duo claim page.
+  this device.
 - Slice 6: booth leaderboard (today's and the weekend's top 20) on a Google
   Sheet: `leaderboard/Code.gs`, set up with `leaderboard/SETUP.md`. Names are
   made up for the player or typed; the Sheet checks typed names against its
@@ -74,7 +74,7 @@ Add `?boards` to the address to see every board at once.
 - Slice 7: booth mode and sound. Add `?booth` to the address on the booth's
   own device: tap-anywhere title screen showing today's top score, no zoom or
   long-press, a "Still playing?" prompt after a minute untouched and a fresh
-  start 10 seconds later, and the claim page shown as a QR code to scan.
+  start 10 seconds later.
   Sounds and music are in `public/audio/` with `manifest.json` (which file
   plays for what, and how loud); sources and licences in `audio-src/SOURCES.md`.
 - Tapping the upgrade icons under the wave bar pauses the game and shows
@@ -92,5 +92,5 @@ Add `?boards` to the address to see every board at once.
   shows as a leafy shield; lifesteal sends green sparks back to Junior.
   Shapes for these are drawn in code (`src/fight/effects.ts`).
 
-Settings that change without code (claim page address, leaderboard address,
+Settings that change without code (leaderboard address,
 booth idle time): `public/content/config.json`.

@@ -31,7 +31,7 @@ export interface Game {
  * whether the game is on its own page or embedded in another site.
  * Add ?bench to the address for the board test bench, or ?boards to see
  * every board at once, instead of a run. ?booth runs it as the booth's own
- * device: attract screen, reset when left alone, claim page as a QR code.
+ * device: attract screen, no zooming, reset when left alone.
  */
 /**
  * One question source per level. A bank that fails to load falls back to the
