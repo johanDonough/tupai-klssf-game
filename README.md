@@ -14,6 +14,14 @@ Double-click `start-dev.bat`. It prints two addresses: "Local" for this PC, and
 To make the files that go on a web host: `npm run build`. The result is the
 `dist` folder, which works from any address or inside an iframe.
 
+Live: https://johandonough.github.io/tupai-klssf-game/ (add `?booth` on the
+booth's own device). Every push to `main` rebuilds and republishes it
+(`.github/workflows/deploy.yml`).
+
+Pour boards are checked with `node tools/measure_boards.ts`: every gate
+reachable, no nuts lost, pours under 12 seconds, layout rules (walls to the
+sides, moving-gate clearance). Run it after changing `boards.json`.
+
 ## How it is put together
 
 | Part | Where |

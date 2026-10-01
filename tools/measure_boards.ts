@@ -7,7 +7,7 @@
 //   node tools/measure_boards.ts                 every board
 //   node tools/measure_boards.ts zigzag funnel   only these ids
 //   node tools/measure_boards.ts --nuts 24       a different cup size
-//   node tools/measure_boards.ts --rows ID       also print each cup position
+//   node tools/measure_boards.ts --rows dam      also print each cup position and gate hit counts
 //   node tools/measure_boards.ts --json out.json write the full rows too
 //   node tools/measure_boards.ts --seeds 1,2,3   other seeds (default 7,8, as the game's measure)
 //   node tools/measure_boards.ts --boards f.json measure another boards file
@@ -15,7 +15,9 @@
 // Also lints each layout: walls that end near a side must reach it, no
 // near-flat walls, gates inside the board and between y 4.2 and 12, and a
 // moving gate's posts stay 0.5 clear of walls and sides across the swing.
-// Exits with code 1 if anything fails.
+// Exits with code 1 if anything fails. The 12 s limit is meant for 12 nuts;
+// with --nuts 30 or more, a few boards that pour everything down long ramps
+// go past it without losing anything.
 
 import RAPIER from '@dimforge/rapier2d-compat'
 import { readFileSync, writeFileSync } from 'node:fs'
