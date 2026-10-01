@@ -22,7 +22,9 @@ export function contentUrl(name: string): string {
 }
 
 export function iconUrl(name: string): string {
-  return import.meta.env.BASE_URL + 'icons/' + name + '.svg'
+  // Absolute, because icons are used through a CSS variable, and a relative
+  // url() there resolves against the stylesheet's folder, not the page's.
+  return new URL(import.meta.env.BASE_URL + 'icons/' + name + '.svg', document.baseURI).href
 }
 
 export function artUrl(name: string): string {
